@@ -1,6 +1,7 @@
 project "reactphysics3d"
 	kind "StaticLib"
 	language "C++"
+	cppdialect "C++17"
 	staticruntime "off"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
@@ -16,7 +17,7 @@ project "reactphysics3d"
 	{
 		"include"
 	}
-
+	
 	filter "system:windows"
 		systemversion "latest"
 		staticruntime "On"
